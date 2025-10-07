@@ -1,6 +1,7 @@
 # Variables de Entorno
 ### ¿Qué son las variables de entorno?
-# COMPLETAR
+
+Son variables dinámicas que son utilizadas por el sistema operativo y algunos programas para su correcto funcionamiento, sin la necesidad de incluirlas directamente en el programa.
 
 ### Para crear un contenedor con variables de entorno
 
@@ -10,18 +11,33 @@ docker run -d --name <nombre contenedor> -e <nombre variable1>=<valor1> -e <nomb
 
 ### Crear un contenedor a partir de la imagen de nginx:alpine con las siguientes variables de entorno: username y role. Para la variable de entorno rol asignar el valor admin.
 
-# COMPLETAR
+```
+docker run -d --name holadios -e username=Diablo -e role=admin nginx:alpine
+```
 
-# CAPTURA CON LA COMPROBACIÓN DE LA CREACIÓN DE LAS VARIABLES DE ENTORNO DEL CONTENEDOR ANTERIOR
+<img width="897" height="374" alt="image" src="https://github.com/user-attachments/assets/140407ec-d91e-4c30-9671-86638ead5477" />
 
 ### Crear un contenedor con la imagen de mysql, mapear todos los puertos
-# COMPLETAR
+
+```
+docker run -d -P --name berni mysql:latest
+```
 
 ### ¿El contenedor se está ejecutando?
-# COMPLETAR
+
+No se está ejecutando
 
 ### Identificar el problema
-# COMPLETAR
+
+La base de datos no está inicializada y además, las variables de entorno no están especificadas.
+
+You need to specify one of the following as an environment variable:
+
+    - MYSQL_ROOT_PASSWORD
+    
+    - MYSQL_ALLOW_EMPTY_PASSWORD
+    
+    - MYSQL_RANDOM_ROOT_PASSWORD
 
 ### Para crear un contenedor con variables de entorno especificadas
 - Portabilidad: Las aplicaciones se vuelven más portátiles y pueden ser desplegadas en diferentes entornos (desarrollo, pruebas, producción) simplemente cambiando el archivo de variables de entorno.
@@ -32,6 +48,10 @@ docker run -d --name <nombre contenedor> -e <nombre variable1>=<valor1> -e <nomb
 
 ### Crear un contenedor con mysql, mapear todos los puertos y configurar las variables de entorno mediante un archivo
 # COMPLETAR
+
+
+<img width="2082" height="731" alt="image" src="https://github.com/user-attachments/assets/1e319b83-4030-4177-b2d1-c74304559915" />
+
 
 # CAPTURA CON LA COMPROBACIÓN DE LA CREACIÓN DE LAS VARIABLES DE ENTORNO DEL CONTENEDOR ANTERIOR 
 
