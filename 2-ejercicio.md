@@ -13,9 +13,9 @@ docker run -d --name pgadmin -e PGADMIN_DEFAULT_EMAIL=admin@admin.com -e PGADMIN
 # COMPLETAR
 
 La figura presenta el esquema creado en donde los puertos son:
-- a: (completar con el valor)
-- b: (completar con el valor)
-- c: (completar con el valor)
+- a: 80
+- b: 80
+- c: 5432
 
 ![Imagen](esquema-2-ejercicio.PNG)
 
@@ -58,5 +58,8 @@ INSERT INTO personas (nombre) VALUES ('Adnux');
 ### Realizar un select *from personas
 
 <img width="897" height="757" alt="image" src="https://github.com/user-attachments/assets/95df6a82-361f-4c8c-b29f-371d34ee92f9" />
+
+<img width="1744" height="1482" alt="image" src="https://github.com/user-attachments/assets/73e6b34a-d0d4-4d38-aa61-a90e34347986" />
+
 
 # AGREGAR UNA CAPTURA DE PANTALLA DEL RESULTADO
